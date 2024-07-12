@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 81%);
+}
+
+.container {
+  width: 70em;
+  height: 45em;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-card-container {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.top-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+}
+
+.top-left-card {
+  width: 70%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0px 20px 30px;
+}
+
+.header img {
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  font-size: 400;
+}
+
+.verified {
+  color: hsl(0, 0%, 81%);
+}
+
+.heading {
+  font-size: 20px;
+  color: white;
+  padding: 0 0 0 30px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.comment {
+  padding: 10px 30px 0 30px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  color: #c7b2e9;
+}
+
+.top-left-card::before {
+  content: url(./images/bg-pattern-quotation.svg);
+  float: right;
+  padding-right: 70px;
+}
+
+.top-right-card {
+  width: 30%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.bottom-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+}
+
+.bottom-left-card {
+  width: 30%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bottom-right-card {
+  width: 70%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.right-card-container {
+  width: 25%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 48em) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .top-card-container {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .bottom-card-container {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .right-card-container {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .top-left-card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .bottom-left-card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .bottom-right-card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .top-right-card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .comment {
+    padding: 10px 30px 30px 30px;
+  }
+}
